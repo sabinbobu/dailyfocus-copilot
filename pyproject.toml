@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dailyfocus-copilot"
+version = "0.1.0"
+description = "GenAI-powered daily planning assistant with evaluation-first RAG"
+authors = ["Sabin Bobu bob8sabin8@gail.com"]
+readme = "README.md"
+packages = [{ include = "api" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.128.0"
+uvicorn = {extras = ["standard"], version = "^0.40.0"}
+pydantic = "^2.12.5"
+python-dotenv = "^1.2.1"
+openai = "^2.16.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+ruff = "^0.3.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
