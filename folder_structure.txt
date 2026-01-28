@@ -1,0 +1,29 @@
+dailyfocus-copilot/
+│
+├── api/
+│   └── app/
+│       ├── main.py
+│       ├── config.py
+│       ├── models.py
+│       ├── services/
+│       ├── routers/
+│       └── core/
+│
+├── ingestion/
+│   └── ingest.py
+│
+├── eval/
+│   └── benchmarks/
+│
+├── infra/
+│   └── docker-compose.yml
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── docs/
+│
+├── pyproject.toml
+├── README.md
+└── .env.example
